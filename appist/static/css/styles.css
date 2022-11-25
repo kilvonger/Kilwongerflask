@@ -6,22 +6,29 @@ html, body {
 	width: 100%;
 }
 
+.container {
+
+}
 
 ul.mainmenu {
 	list-style: none;
 	background: #3F4137;
-	height: 60px;
+	height: 50%;
 	margin: 0;
 	padding: 0;
 	color: #fdc073;
 	font-size: 20px;
 	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
+
 ul.mainmenu li {
 	float: left;
 	margin: 18px 40px 0 50px;
 }
-ul.mainmenu li.last {float: right;}
+
 
 ul.mainmenu li a {
 	color: #fdc073;
@@ -37,6 +44,7 @@ list-style-type: circle;
     color: #3F4137;
     font-family: 'Roboto';
 }
+
 .clear {clear: both;}
 
 div.content {
@@ -51,4 +59,15 @@ div.content {
 .form-contact p {margin: 10px 0 10px 0;}
 .form-contact input[type=submit], textarea {
 	font-size: 16px;
+}
+
+.flash { padding: 10px; }
+.flash.success {
+    border: 2px solid #21DB56;
+    background: green;
+}
+
+.flash.error{
+    border: 5px solid #FF4343;
+    background: red;
 }
